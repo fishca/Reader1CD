@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Read1CD.FieldType" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAEAABAAAAIQEBCAAAEEASAABAAAAAEA=</HashCode>
+      <FileName>FieldType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.CommonFieldType" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAABECAAIAAAAABAEEACAAZAAAAAAA=</HashCode>
+      <FileName>FieldType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.Parse_Tree" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parse_Tree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.tree">
+    <Position X="12.5" Y="0.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAKABAAAABAIABAAGESQAAgEEAJIDCBwQBgARIBAgA=</HashCode>
+      <FileName>Parse_Tree.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.Program" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.Structures">
+    <Position X="17.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>BEAQIAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAgBAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.Constant">
+    <Position X="15.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAgEEAAAAAAAAAAAEQAAAAAABAAAAAAAAIAEEAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.v8Base1CD" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAARAjAAAAAAEABCAGAEAIQkABAgGAAAAAAIAAggAAQ=</HashCode>
+      <FileName>v8Base1CD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.v8Field" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kASAAAACABAAEEhABACAAIQAAAFFAEEACAABAAQABEA=</HashCode>
+      <FileName>v8Field.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.v8File">
+    <Position X="20" Y="0.5" Width="3.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="Read1CD.v8File.FileIsCatalog" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>v8File.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="Read1CD.v8File.TV8FileStream">
+        <TypeIdentifier>
+          <NewMemberFileName>v8File.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAABAAIAAAAEAAAAAAAAIgAAAEAAAAAAASAgAAAUA=</HashCode>
+      <FileName>v8File.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.v8Index" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>A9hAACACAACEAADgAEgAgAAEABAEAAAAIUCAACAAJAQ=</HashCode>
+      <FileName>v8Index.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.v8MemBlock" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAQAACAAAAEAAgBBEQAAQEAFAACAAABQhAAEIAggQ=</HashCode>
+      <FileName>v8MemBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.V8Object" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAACABGBBAAAAgACOUEIAAAmABDAKCgABYAQIgJgA=</HashCode>
+      <FileName>v8Object.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.v8Page" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>v8Page.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Read1CD.v8Table" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAiACARGgxWhUABVoAJgMAkNCBA0gAMvMYUhIlEApAI=</HashCode>
+      <FileName>v8Table.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="Read1CD.v8con" Collapsed="true">
+    <Position X="6.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAMIBAAQAAEAAAAAgABAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD._version_rec" Collapsed="true">
+    <Position X="6.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD._version" Collapsed="true">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.objtab" Collapsed="true">
+    <Position X="10" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.objtab838" Collapsed="true">
+    <Position X="3" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.v8ob" Collapsed="true">
+    <Position X="8.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAQAAACAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.v838ob_data" Collapsed="true">
+    <Position X="3" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAQAAACAAAAAAAAAAAAAAAAAAAAAJAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.v838ob_free" Collapsed="true">
+    <Position X="4.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAJAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.root_80" Collapsed="true">
+    <Position X="6.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQABAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.root_81" Collapsed="true">
+    <Position X="8.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQABAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.pagemaprec" Collapsed="true">
+    <Position X="4.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAQAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.field_type_declaration" Collapsed="true">
+    <Position X="4.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAEAAAAAAAAABAEAAAAAYAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.index_record" Collapsed="true">
+    <Position X="6.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.unpack_index_record" Collapsed="true">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.branch_page_header" Collapsed="true">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAABAAAAAAAQ=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.leaf_page_header" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQCAEAAAAAAAAAAYAAICAAAABAAAABEAAAAAAQ=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD._pack_index_record" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.blob_block" Collapsed="true">
+    <Position X="8.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAEAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>v8Table.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Read1CD.export_import_table_root" Collapsed="true">
+    <Position X="3" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABAAgAAACAAAAAAAAAACQAEAIAAAAAAAEAAAEA=</HashCode>
+      <FileName>v8Table.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="Read1CD.node_type" Collapsed="true">
+    <Position X="8.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IBAAURAAAAAAAAAAACAAAAAQAAAIBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parse_Tree.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Read1CD._state" Collapsed="true">
+    <Position X="3" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAASAAEAAAAAAAAAAgAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Parse_Tree.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Read1CD.v8objtype" Collapsed="true">
+    <Position X="6.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAQAAAAAAAAEAAAAgIAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Read1CD.pagetype" Collapsed="true">
+    <Position X="10" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAQgAAAAIAgAACCAAgAIAIAEAWAAAQAAAQAABBAEA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Read1CD.db_ver" Collapsed="true">
+    <Position X="6.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAIAAgAAAgEAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Structures.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Read1CD.type_fields" Collapsed="true">
+    <Position X="4.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAgCAQgAAAQAABAAAAgAAAAAAAMAAACgAAA=</HashCode>
+      <FileName>v8Table.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Read1CD.table_info" Collapsed="true">
+    <Position X="3" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAIAAAAAAQBAAAAAAABAAAAAAA=</HashCode>
+      <FileName>v8Table.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Read1CD.changed_rec_type" Collapsed="true">
+    <Position X="4.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAQAAJAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>v8Table.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
