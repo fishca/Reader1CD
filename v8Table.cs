@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using static Read1CD.Constant;
+using static Read1CD.Structures;
+
 
 namespace Read1CD
 {
@@ -261,7 +264,8 @@ namespace Read1CD
             Int32[] blockfile = new Int32[3];
             v8Field fld;
             //UInt32[] buf = new UInt32[num_indexes + 1];
-            byte[] buf = new byte[num_indexes + 1];
+            //byte[] buf = new byte[num_indexes + 1];
+            byte[] buf = new byte[PAGE8K];
 
 
             init();

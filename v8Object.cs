@@ -707,7 +707,8 @@ namespace Read1CD
         {
             UInt32 curblock;
             UInt32 curoffblock;
-            byte[] _buf = new byte[0x1000];
+            //byte[] _buf = new byte[0x1000];
+            byte[] _buf = new byte[PAGE8K];
             byte[] _bu;
             UInt32 curlen = 0;
             UInt32 destIndex = 0;
@@ -856,6 +857,7 @@ namespace Read1CD
                     }
                     else
                     {
+                        destIndex = 0;
                         while (_length != 0)
                         {
                             _bu = _base.getblock(blocks[curblock++]);
