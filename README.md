@@ -1,1 +1,1 @@
-Чтение 1CD
+Чтение 1CD, обкатка для https://github.com/fishca/ostool1cd/
