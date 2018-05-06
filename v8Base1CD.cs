@@ -121,8 +121,64 @@ namespace Read1CD
                     continue;
                 }
 
-            }
+                if (tables[j].getname().CompareTo("CONFIG")          == 0) table_config          = tables[j];
+                if (tables[j].getname().CompareTo("CONFIGSAVE")      == 0) table_configsave      = tables[j];
+                if (tables[j].getname().CompareTo("PARAMS")          == 0) table_params          = tables[j];
+                if (tables[j].getname().CompareTo("FILES")           == 0) table_files           = tables[j];
+                if (tables[j].getname().CompareTo("DBSCHEMA")        == 0) table_dbschema        = tables[j];
+                if (tables[j].getname().CompareTo("CONFIGCAS")       == 0) table_configcas       = tables[j];
+                if (tables[j].getname().CompareTo("CONFIGCASSAVE")   == 0) table_configcassave   = tables[j];
+                if (tables[j].getname().CompareTo("_EXTENSIONSINFO") == 0) table__extensionsinfo = tables[j];
+                if (tables[j].getname().CompareTo("DEPOT")           == 0) table_depot           = tables[j];
+                if (tables[j].getname().CompareTo("USERS")           == 0) table_users           = tables[j];
+                if (tables[j].getname().CompareTo("OBJECTS")         == 0) table_objects         = tables[j];
+                if (tables[j].getname().CompareTo("VERSIONS")        == 0) table_versions        = tables[j];
+                if (tables[j].getname().CompareTo("LABELS")          == 0) table_labels          = tables[j];
+                if (tables[j].getname().CompareTo("HISTORY")         == 0) table_history         = tables[j];
+                if (tables[j].getname().CompareTo("LASTESTVERSIONS") == 0) table_lastestversions = tables[j];
+                if (tables[j].getname().CompareTo("EXTERNALS")       == 0) table_externals       = tables[j];
+                if (tables[j].getname().CompareTo("SELFREFS")        == 0) table_selfrefs        = tables[j];
+                if (tables[j].getname().CompareTo("OUTREFS")         == 0) table_outrefs         = tables[j];
 
+                j++;
+
+            }
+            num_tables = j;
+
+            if (table_config == null && table_configsave == null && table_params == null && table_files == null && table_dbschema == null)
+            {
+                if (table_depot == null && table_users == null && table_objects == null && table_versions == null && table_labels == null && table_history == null && table_lastestversions == null && table_externals == null && table_selfrefs == null && table_outrefs == null)
+                {
+                    Console.WriteLine("База не является информационной базой 1С");
+                }
+                else
+                {
+                    is_depot = true;   // это хранилище
+
+                    if (table_depot           == null) Console.WriteLine("Отсутствует таблица DEPOT");
+                    if (table_users           == null) Console.WriteLine("Отсутствует таблица USERS");
+                    if (table_objects         == null) Console.WriteLine("Отсутствует таблица OBJECTS");
+                    if (table_versions        == null) Console.WriteLine("Отсутствует таблица VERSIONS");
+                    if (table_labels          == null) Console.WriteLine("Отсутствует таблица LABELS");
+                    if (table_history         == null) Console.WriteLine("Отсутствует таблица HISTORY");
+                    if (table_lastestversions == null) Console.WriteLine("Отсутствует таблица LASTESTVERSIONS");
+                    if (table_externals       == null) Console.WriteLine("Отсутствует таблица EXTERNALS");
+                    if (table_selfrefs        == null) Console.WriteLine("Отсутствует таблица SELFREFS");
+                    if (table_outrefs         == null) Console.WriteLine("Отсутствует таблица OUTREFS");
+
+                    FieldType.showGUIDasMS = true; // TODO: wat??
+                }
+            }
+            else
+            {
+                is_infobase = true;    // это информационная база
+
+                if (table_config     == null) Console.WriteLine("Отсутствует таблица CONFIG");
+                if (table_configsave == null) Console.WriteLine("Отсутствует таблица CONFIGSAVE");
+                if (table_params     == null) Console.WriteLine("Отсутствует таблица PARAMS");
+                if (table_files      == null) Console.WriteLine("Отсутствует таблица FILES");
+                if (table_dbschema   == null) Console.WriteLine("Отсутствует таблица DBSCHEMA");
+            }
 
         }
 
@@ -163,7 +219,36 @@ namespace Read1CD
 
         }
 
-        v8Table[] tables;
+        public v8Table[] tables;
+
+        //=======================================================================
+
+        v8Table table_config;
+        v8Table table_configsave;
+        v8Table table_params;
+        v8Table table_files;
+        v8Table table_dbschema;
+        v8Table table_configcas;
+        v8Table table_configcassave;
+        v8Table table__extensionsinfo;
+
+        // таблицы - хранилища файлов
+        //ConfigStorageTableConfig cs_config;
+        //ConfigStorageTableConfigSave cs_configsave;
+
+        // Таблицы хранилища конфигураций
+        v8Table table_depot;
+        v8Table table_users;
+        v8Table table_objects;
+        v8Table table_versions;
+        v8Table table_labels;
+        v8Table table_history;
+        v8Table table_lastestversions;
+        v8Table table_externals;
+        v8Table table_selfrefs;
+        v8Table table_outrefs;
+
+        //=======================================================================
 
         public v8con   Page0;
         public objtab  Page1;
@@ -180,6 +265,8 @@ namespace Read1CD
 
         public bool is_open; // признак того что базу удалось открыть
         public bool is_read; // признак того что базу удалось прочитать, т.е. прочитаны все страницы
+        public bool is_infobase; // признак информационной базы
+        public bool is_depot; // признак хранилища конфигурации
 
         public Stream data1CD;
 
