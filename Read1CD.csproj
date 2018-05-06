@@ -53,6 +53,7 @@
     <Compile Include="v8catalog.cs" />
     <Compile Include="v8Field.cs" />
     <Compile Include="v8File.cs" />
+    <Compile Include="V8Header.cs" />
     <Compile Include="v8Index.cs" />
     <Compile Include="v8MemBlock.cs" />
     <Compile Include="v8Object.cs" />
