@@ -27,7 +27,9 @@ namespace Read1CD
             //String verDB = Data1c.Page0.getver();
             String verDB = Data1c.Page0.Version;
 
+
             //Вывод сообщения в консоль
+
             Console.WriteLine($"В базе {FileName}, версия базы {verDB} и количество таблиц в файле: {Data1c.num_tables}");
         }
 
